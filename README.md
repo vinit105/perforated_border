@@ -11,8 +11,8 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
 
-<h1 align="start" style="font-size: 36px;">Perforated Border</h1>
-<p align="start">
+<h1  style="font-size: 36px;">Perforated Border</h1>
+<p >
   A Flutter package that enables you to create beautiful perforated and punch-hole borders around widgets. Offers full control over shape, radius, spacing, and edge styles, allowing you to customize your widget's border appearance to suit your design needs.
 </p>
 
