@@ -1,7 +1,12 @@
+import 'package:example/demo_borders/bump_border_widget.dart';
+import 'package:example/demo_borders/perforated_borders.dart';
+import 'package:example/demo_borders/wavy_border_widget.dart';
+import 'package:example/demo_borders/zigzag_border_widget.dart';
+import 'package:example/demo_web_borders/borders_demo.dart';
 import 'package:flutter/material.dart';
-import 'package:perforated_border/perforated_border.dart';
 
 void main() => runApp(const MyApp());
+GlobalKey<NavigatorState> _key = GlobalKey();
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -9,34 +14,30 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      navigatorKey: _key,
       home: Scaffold(
-        body: Center(
-          child: Builder(
-            builder:(context) =>  Container(
-              color: Colors.grey.shade200,
-              child: PerforatedBorder(
-                options: ZigzagBorderOptions(
-                  // dentRadius: 6,
-                  // flatWidth: 3,
-                  paint: Paint()..strokeWidth= 1..color = Colors.blueAccent..style=PaintingStyle.fill,
-
-                  stripeCount: 250,
-                  stampValue: false,
-                  borderSideOptions: const BorderSideOptions.allSides(color: Colors.green,style: PaintingStyle.fill ),
-                  // borderSideOptions: BorderSideOptions.only(borderSideType:BorderSideType.top,color: Colors.green,style: PaintingStyle.fill ),
-                  borderColor: Colors.red
-                  // borderSideType: BorderSideType.allSides,
-                  // waveSize: 100,
-                ),
-                child: Container(
-                  padding: const EdgeInsets.all(40),
-                  // color: Colors.yellowAccent,
-                  child: const FlutterLogo(size: 100),
-                ),
-              ),
+        body: const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                PerforatedBordersDemoWidget(),
+                WavyBordersDemoWidget(),
+                ZigZagBordersDemoWidget(),
+                BumpBordersDemoWidget(),
+              ],
             ),
           ),
         ),
+        floatingActionButton: IconButton(
+            onPressed: () {
+              _key.currentState!.push(
+                MaterialPageRoute(
+                  builder: (context) => const WebViwAllBorders(),
+                ),
+              );
+            },
+            icon: const Icon(Icons.web)),
       ),
     );
   }
