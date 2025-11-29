@@ -16,11 +16,11 @@ funding:
 
 topics:
 
-  - wavy borders
-  - zigzag borders
+  - wavy-borders
+  - zigzag-borders
   - tag
-  - bump borders
-  - perforated_border
+  - bump-borders
+  - perforated-border
 environment:
   sdk: ^3.9.2
   flutter: ">=1.17.0"
