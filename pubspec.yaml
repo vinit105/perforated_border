@@ -1,8 +1,28 @@
 name: perforated_border
-description: "perforated_border"
+description: 'Create beautiful perforated and punch-hole borders around widgets with full control over shape, radius, spacing, and edges'
 version: 0.0.1
-homepage:
+homepage: https://github.com/vinit105/perforated_border
+issue_tracker: https://github.com/vinit105/perforated_border/issue
+funding:
+  - https://buymeacoffee.com/vinit105
 
+#screenshots:
+#  - description: 'This screenshot shows the transformation of a number of bytes
+#  to a human-readable expression.'
+#    path: path/to/image/in/package/500x500.webp
+#  - description: 'This screenshot shows a stack trace returning a human-readable
+#  representation.'
+#    path: path/to/image/in/package.png
+
+topics:
+  - border
+  - perforated
+  - borders
+  - wavy borders
+  - zigzag borders
+  - tag
+  - bump borders
+  - perforated_border
 environment:
   sdk: ^3.9.2
   flutter: ">=1.17.0"

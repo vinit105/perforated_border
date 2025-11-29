@@ -28,8 +28,11 @@ class BorderSideOptions {
     this.color = Colors.black,
     this.borderSideType = BorderSideType.horizontal,
     this.style = PaintingStyle.stroke,
-
-  }) ;
+  }) : assert(
+      borderSideType == BorderSideType.vertical ||
+      borderSideType == BorderSideType.horizontal,
+  'BorderSideType must be horizontal or vertical',
+  );
 
   const BorderSideOptions.allSides({
     this.strokeWidth = 1.0,

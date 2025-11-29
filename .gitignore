@@ -29,5 +29,12 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 /build/
 /coverage/
-/example/.dart_tool
-/example/build
+
+# Example app generated files
+/example/.dart_tool/
+/example/build/
+/example/.packages
+/example/.flutter-plugins
+/example/.flutter-plugins-dependencies
+/example/ios/Flutter/Flutter.framework
+/example/ios/Flutter/Flutter.podspec

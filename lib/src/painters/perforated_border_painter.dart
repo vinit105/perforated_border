@@ -39,6 +39,7 @@ class PerforatedBorderPainter extends CustomPainter {
         options.paint ??
             (Paint()
               ..strokeWidth = options.borderSideOptions.strokeWidth
+              ..color = options.borderColor
               ..style = options.borderSideOptions.style);
 
     ///
