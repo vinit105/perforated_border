@@ -19,7 +19,7 @@ and the Flutter guide for
 ## Features
 
 <p align="center">
-  <img src="https://raw" width="500" alt="perforated border preview"/>
+  <img src="https://github.com/vinit105/perforated_border/blob/18c81205ddf3d50bae17dac9e6ae74bd061ce47d/example/assets/PREVIEW.jpeg" width="500" alt="perforated border preview"/>
 </p>
 <div align="center">
    <!--  Donations -->
@@ -69,7 +69,7 @@ import 'package:perforated_border/perforated_border.dart';
 
 ```
 PerforatedBorder.  
-  <img src="https://raw" width="500" alt="perforated border preview"/>.   
+  <img src="https://github.com/vinit105/perforated_border/blob/18c81205ddf3d50bae17dac9e6ae74bd061ce47d/example/assets/perforated_preview.png" width="250" alt="perforated border preview"/>.   
 
 ```dart
 PerforatedBorder(
@@ -90,7 +90,7 @@ PerforatedBorder(
 ```
 ---
 WavyBorder.  
-  <img src="https://raw" width="500" alt="wavy border preview"/>.   
+  <img src="https://github.com/vinit105/perforated_border/blob/18c81205ddf3d50bae17dac9e6ae74bd061ce47d/example/assets/wavy_preview.png" width="250" alt="wavy border preview"/>.   
 
 ```dart
 PerforatedBorder(
@@ -109,7 +109,7 @@ PerforatedBorder(
 ```
 ---
 ZigZagBorder.  
-  <img src="https://raw" width="500" alt="zigzag border preview"/>.   
+  <img src="https://github.com/vinit105/perforated_border/blob/18c81205ddf3d50bae17dac9e6ae74bd061ce47d/example/assets/zigzag_preview.png" width="250" alt="zigzag border preview"/>.   
 
 ```dart
 PerforatedBorder(
