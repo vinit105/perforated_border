@@ -128,7 +128,7 @@ PerforatedBorder(
 ```
 ---
 BumpBorder.  
-  <img src="https://raw" width="500" alt="bumper border preview"/>.   
+  <img src="https://raw.githubusercontent.com/vinit105/perforated_border/22ff6b72058aeb4b811a21b3aaa17f7f3531613f/example/assets/bumper_preview.png?token=GHSAT0AAAAAADMCB2BHWHHCBGHASOZQPF322JLGHBQ" width="500" alt="bumper border preview"/>.   
 
 ```dart
 PerforatedBorder(
