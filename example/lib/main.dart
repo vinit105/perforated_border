@@ -2,6 +2,7 @@ import 'package:example/demo_borders/bump_border_widget.dart';
 import 'package:example/demo_borders/perforated_borders.dart';
 import 'package:example/demo_borders/wavy_border_widget.dart';
 import 'package:example/demo_borders/zigzag_border_widget.dart';
+import 'package:example/demo_usecases/demo_usecases_widget.dart';
 import 'package:example/demo_web_borders/borders_demo.dart';
 import 'package:flutter/material.dart';
 
@@ -25,6 +26,8 @@ class MyApp extends StatelessWidget {
                 WavyBordersDemoWidget(),
                 ZigZagBordersDemoWidget(),
                 BumpBordersDemoWidget(),
+                const Text('Demo UseCases',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22),),
+                DemoUseCasesWidget(),
               ],
             ),
           ),

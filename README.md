@@ -48,6 +48,15 @@ and the Flutter guide for
 | Android | iOS | macOS | Web | Linux | Windows |
 | :-----: | :-: | :---: | :-: | :---: | :-----: |
 |   ✅    | ✅  |   ✅   | ✅  |  ✅    |   ✅    |
+
+
+## UseCases
+
+<div>
+      <img width="300" alt="buymeacoffee" src="https://user-images.githubusercontent.com/26390946/161375563-69c634fd-89d2-45ac-addd-931b03996b34.png">
+
+</div>
+
 ## 📦 Getting started
 
 ```yaml
@@ -109,7 +118,7 @@ PerforatedBorder(
 ```
 ---
 ZigZagBorder.  
-2  <img src="https://raw.githubusercontent.com/vinit105/perforated_border/refs/heads/main/example/assets/zigzag_preview.png" width="250" alt="zigzag border preview"/>.   
+  <img src="https://raw.githubusercontent.com/vinit105/perforated_border/refs/heads/main/example/assets/zigzag_preview.png" width="250" alt="zigzag border preview"/>.   
 
 ```dart
 PerforatedBorder(

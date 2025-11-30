@@ -27,7 +27,7 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
       );
     }
     return Scaffold(
-      backgroundColor: Colors.green.shade50,
+      // backgroundColor: Colors.green.shade50,
       body: Padding(
         padding: const EdgeInsets.all(25.0),
         child: SingleChildScrollView(
@@ -54,9 +54,8 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         // ? Colors.redAccent
                         // : Colors.transparent,
                       ),
-                      borderColor: changeColor
-                          ? Colors.redAccent
-                          : Colors.black,
+                      borderColor:
+                          changeColor ? Colors.redAccent : Colors.black,
                     ),
                     child: Container(
                       color: showContainerColor
@@ -81,9 +80,8 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         // ? Colors.redAccent
                         // : Colors.transparent,
                       ),
-                      borderColor: changeColor
-                          ? Colors.redAccent
-                          : Colors.black,
+                      borderColor:
+                          changeColor ? Colors.redAccent : Colors.black,
                       stripeCount: stripeCountWavy,
                     ),
                     child: Container(
@@ -109,9 +107,8 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         // ? Colors.redAccent
                         // : Colors.transparent,
                       ),
-                      borderColor: changeColor
-                          ? Colors.redAccent
-                          : Colors.black,
+                      borderColor:
+                          changeColor ? Colors.redAccent : Colors.black,
                       stripeCount: stripeCountBumper,
                     ),
                     child: Container(
@@ -127,19 +124,7 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                       ),
                     ),
                   ),
-                  PerforatedBorder(
-                    options: BumperBorderOptions(
-                      stripeCount: 10,
-                      borderSideOptions: BorderSideOptions.allSides(
-                        color: Colors.black,
-                        style: PaintingStyle.stroke,
-                      ),
-                    ),
-                    child: Padding(
-                      padding: EdgeInsets.all(20),
-                      child: FlutterLogo(size: 60),
-                    ),
-                  ),
+
                   PerforatedBorder(
                     options: PerforatedBorderOptions(
                       flatWidth: flatRadius,
@@ -153,9 +138,8 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         // ? Colors.redAccent
                         // : Colors.transparent,
                       ),
-                      borderColor: changeColor
-                          ? Colors.redAccent
-                          : Colors.black,
+                      borderColor:
+                          changeColor ? Colors.redAccent : Colors.black,
                     ),
                     child: Container(
                       color: showContainerColor
@@ -360,9 +344,8 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         // ? Colors.redAccent
                         // : Colors.transparent,
                       ),
-                      borderColor: changeColor
-                          ? Colors.redAccent
-                          : Colors.black,
+                      borderColor:
+                          changeColor ? Colors.redAccent : Colors.black,
                     ),
                     child: Container(
                       color: showContainerColor
@@ -389,9 +372,8 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         // ? Colors.redAccent
                         // : Colors.transparent,
                       ),
-                      borderColor: changeColor
-                          ? Colors.redAccent
-                          : Colors.black,
+                      borderColor:
+                          changeColor ? Colors.redAccent : Colors.black,
                     ),
                     child: Container(
                       color: showContainerColor
@@ -418,9 +400,8 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         // ? Colors.redAccent
                         // : Colors.transparent,
                       ),
-                      borderColor: changeColor
-                          ? Colors.redAccent
-                          : Colors.black,
+                      borderColor:
+                          changeColor ? Colors.redAccent : Colors.black,
                     ),
                     child: Container(
                       color: showContainerColor
@@ -449,9 +430,8 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         // ? Colors.redAccent
                         // : Colors.transparent,
                       ),
-                      borderColor: changeColor
-                          ? Colors.redAccent
-                          : Colors.black,
+                      borderColor:
+                          changeColor ? Colors.redAccent : Colors.black,
                     ),
                     child: Container(
                       color: showContainerColor
@@ -467,9 +447,55 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                     ),
                   ),
                   const SizedBox(height: 180),
-                ],
+
+
+          ],
               ),
             ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+class CoffeeImageBox extends StatelessWidget {
+  final String url;
+
+  const CoffeeImageBox({super.key, required this.url});
+
+  @override
+  Widget build(BuildContext context) {
+    return PerforatedBorder(
+      options: PerforatedBorderOptions(
+        dentRadius: 5.4,
+        flatWidth: 2,
+        stripeCount: 15,
+        paint: Paint()
+          ..shader = const LinearGradient(
+            colors: [
+              Color(0xFFC8A97E), // latte beige
+              Color(0xFF8B5E3C), // mocha brown
+              Color(0xFF4A2C18), // espresso
+            ],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ).createShader(const Rect.fromLTWH(0, 0, 380, 200)),
+        borderSideOptions: const BorderSideOptions.allSides(
+          strokeWidth: 2.3,
+          color: Color(0xFF8D7A55), // warm brown outline
+          style: PaintingStyle.stroke,
+        ),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Container(
+          height: 104,
+          width: 104,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: NetworkImage(url),
+              fit: BoxFit.cover,
+            ),
           ),
         ),
       ),
