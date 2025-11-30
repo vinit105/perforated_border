@@ -53,8 +53,24 @@ and the Flutter guide for
 ## UseCases
 
 <div>
-      <img width="300" alt="buymeacoffee" src="https://user-images.githubusercontent.com/26390946/161375563-69c634fd-89d2-45ac-addd-931b03996b34.png">
-
+      <img width="350" height = "420" alt="usecase_1" src="https://raw.githubusercontent.com/vinit105/perforated_border/refs/heads/main/example/assets/event.png">
+      <img width="300"  alt="usecase_2" src="https://raw.githubusercontent.com/vinit105/perforated_border/refs/heads/main/example/assets/event2.png">
+      <img width="300" alt="usecase_3" src="https://raw.githubusercontent.com/vinit105/perforated_border/refs/heads/main/example/assets/event3.png">
+      <img width="300" alt="usecase_4" src="https://raw.githubusercontent.com/vinit105/perforated_border/refs/heads/main/example/assets/event4.png">
+      
+</div>
+<div>
+      <img width="350" height = "350" alt="usecase_4_1" src="https://raw.githubusercontent.com/vinit105/perforated_border/refs/heads/main/example/assets/postage.png">
+      <img width="300"  height = "350" alt="usecase_4_2" src="https://raw.githubusercontent.com/vinit105/perforated_border/refs/heads/main/example/assets/demo_web.png">
+      <img width="300"  height = "350" alt="usecase_4_3" src="https://raw.githubusercontent.com/vinit105/perforated_border/refs/heads/main/example/assets/demo_web_2.png">
+      <img width="300" height = "350" alt="usecase_4_2" src="https://raw.githubusercontent.com/vinit105/perforated_border/refs/heads/main/example/assets/unexpected_behaviour.png">
+      
+</div>
+<div>
+<P>UNEXPECTED BEHAVIOUR (NOT RECOMMENDED)</P>
+      <img width="250" height = "250" alt="usecase_unexpected_behaviour" src="https://raw.githubusercontent.com/vinit105/perforated_border/refs/heads/main/example/assets/thanks.png">
+    
+      
 </div>
 
 ## 📦 Getting started
@@ -172,7 +188,9 @@ If you encounter any issues [please report them here](https://github.com/vinit10
 
 
 
-## ❤️ Support Development
+## ❤️ Support Development  
+<img width="75" height = "75" alt="usecase_unexpected_behaviour" src="https://raw.githubusercontent.com/vinit105/perforated_border/refs/heads/main/example/assets/thanks.png">
+
 If this saved you time: [Buy Me a Coffee ☕](https://buymeacoffee.com/vinit105)
 
 
