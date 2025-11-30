@@ -19,7 +19,7 @@ and the Flutter guide for
 ## Features
 
 <p align="center">
-  <img src="https://github.com/vinit105/perforated_border/blob/18c81205ddf3d50bae17dac9e6ae74bd061ce47d/example/assets/PREVIEW.jpeg" width="1024" alt="perforated border preview"/>
+  <img src="https://raw.githubusercontent.com/vinit105/perforated_border/refs/heads/main/example/assets/PREVIEW.jpeg" width="1024" alt="perforated border preview"/>
 </p>
 <div align="center">
    <!--  Donations -->
@@ -69,7 +69,7 @@ import 'package:perforated_border/perforated_border.dart';
 
 ```
 PerforatedBorder.  
-  <img src="https://github.com/vinit105/perforated_border/blob/18c81205ddf3d50bae17dac9e6ae74bd061ce47d/example/assets/perforated_preview.png" width="250" alt="perforated border preview"/>.   
+<img src="https://raw.githubusercontent.com/vinit105/perforated_border/refs/heads/main/example/assets/perforated_preview.png" width="250" alt="zigzag border preview"/>.
 
 ```dart
 PerforatedBorder(
@@ -90,7 +90,7 @@ PerforatedBorder(
 ```
 ---
 WavyBorder.  
-  <img src="https://github.com/vinit105/perforated_border/blob/18c81205ddf3d50bae17dac9e6ae74bd061ce47d/example/assets/wavy_preview.png" width="250" alt="wavy border preview"/>.   
+  <img src="https://raw.githubusercontent.com/vinit105/perforated_border/refs/heads/main/example/assets/wavy_preview.png" width="250" alt="wavy border preview"/>.   
 
 ```dart
 PerforatedBorder(
@@ -109,7 +109,7 @@ PerforatedBorder(
 ```
 ---
 ZigZagBorder.  
-  <img src="https://github.com/vinit105/perforated_border/blob/18c81205ddf3d50bae17dac9e6ae74bd061ce47d/example/assets/zigzag_preview.png" width="250" alt="zigzag border preview"/>.   
+2  <img src="https://raw.githubusercontent.com/vinit105/perforated_border/refs/heads/main/example/assets/zigzag_preview.png" width="250" alt="zigzag border preview"/>.   
 
 ```dart
 PerforatedBorder(
@@ -128,7 +128,7 @@ PerforatedBorder(
 ```
 ---
 BumpBorder.  
-  <img src="https://raw.githubusercontent.com/vinit105/perforated_border/22ff6b72058aeb4b811a21b3aaa17f7f3531613f/example/assets/bumper_preview.png?token=GHSAT0AAAAAADMCB2BHWHHCBGHASOZQPF322JLGHBQ" width="250" alt="bumper border preview"/>.   
+  <img src="https://raw.githubusercontent.com/vinit105/perforated_border/refs/heads/main/example/assets/bumper_preview.png" width="250" alt="bumper border preview"/>.   
 
 ```dart
 PerforatedBorder(
@@ -154,14 +154,14 @@ Full runnable example in:
 example/lib/main.dart
 ```
 
----
+
 ## Additional information
 
 
 
 If you encounter any issues [please report them here](https://github.com/vinit105/perforated_border/issues).
 
----
+
 
 ## ❤️ Support Development
 If this saved you time: [Buy Me a Coffee ☕](https://buymeacoffee.com/vinit105)
