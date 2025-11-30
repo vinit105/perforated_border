@@ -1,4 +1,3 @@
-
 import 'package:perforated_border/src/models/perforated_options.dart';
 
 class ZigzagBorderOptions extends PerforatedBordersOptions {
@@ -7,6 +6,6 @@ class ZigzagBorderOptions extends PerforatedBordersOptions {
     super.stripeCount, // default stripe count
     super.borderColor,
     super.paint,
-    super.stampValue
+    super.stampValue,
   });
 }

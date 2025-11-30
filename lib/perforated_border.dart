@@ -1,4 +1,4 @@
-library ;
+library;
 
 export 'src/models/perforated_options.dart';
 export 'src/models/zigzag_options.dart';

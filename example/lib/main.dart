@@ -30,14 +30,13 @@ class MyApp extends StatelessWidget {
           ),
         ),
         floatingActionButton: IconButton(
-            onPressed: () {
-              _key.currentState!.push(
-                MaterialPageRoute(
-                  builder: (context) => const WebViwAllBorders(),
-                ),
-              );
-            },
-            icon: const Icon(Icons.web)),
+          onPressed: () {
+            _key.currentState!.push(
+              MaterialPageRoute(builder: (context) => const WebViwAllBorders()),
+            );
+          },
+          icon: const Icon(Icons.web),
+        ),
       ),
     );
   }

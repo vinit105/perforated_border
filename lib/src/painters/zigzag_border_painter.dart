@@ -34,7 +34,9 @@ class ZigzagBorderPainter extends CustomPainter {
         options.borderSideOptions.borderSideType == BorderSideType.allSides ||
         options.borderSideOptions.borderSideType == BorderSideType.horizontal;
     final path = Path();
-    double step = (options.stripeCount%2==0)?options.stripeCount:options.stripeCount+1;
+    double step = (options.stripeCount % 2 == 0)
+        ? options.stripeCount
+        : options.stripeCount + 1;
     final paint =
         options.paint ??
         (Paint()
@@ -44,7 +46,6 @@ class ZigzagBorderPainter extends CustomPainter {
 
     ///
     if (drawTop) {
-
       path.moveTo(0, 0);
       for (double x = 0; x < size.width; x += step) {
         path.lineTo(x + step / 2, step); // Move down

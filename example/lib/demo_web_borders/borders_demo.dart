@@ -23,9 +23,8 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
   Widget build(BuildContext context) {
     if (MediaQuery.sizeOf(context).width < 1020) {
       return const Scaffold(
-          body: Center(
-        child: Text('Web Full Size Support ONLY'),
-      ));
+        body: Center(child: Text('Web Full Size Support ONLY')),
+      );
     }
     return Scaffold(
       backgroundColor: Colors.green.shade50,
@@ -40,9 +39,7 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               ),
-              const SizedBox(
-                height: 60,
-              ),
+              const SizedBox(height: 60),
               Row(
                 spacing: 80,
                 children: [
@@ -57,8 +54,9 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         // ? Colors.redAccent
                         // : Colors.transparent,
                       ),
-                      borderColor:
-                          changeColor ? Colors.redAccent : Colors.black,
+                      borderColor: changeColor
+                          ? Colors.redAccent
+                          : Colors.black,
                     ),
                     child: Container(
                       color: showContainerColor
@@ -69,9 +67,7 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         color: showFlutterLogoColor
                             ? Colors.yellow
                             : Colors.transparent,
-                        child: const FlutterLogo(
-                          size: 100,
-                        ),
+                        child: const FlutterLogo(size: 100),
                       ),
                     ),
                   ),
@@ -85,8 +81,9 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         // ? Colors.redAccent
                         // : Colors.transparent,
                       ),
-                      borderColor:
-                          changeColor ? Colors.redAccent : Colors.black,
+                      borderColor: changeColor
+                          ? Colors.redAccent
+                          : Colors.black,
                       stripeCount: stripeCountWavy,
                     ),
                     child: Container(
@@ -98,9 +95,7 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         color: showFlutterLogoColor
                             ? Colors.yellow
                             : Colors.transparent,
-                        child: const FlutterLogo(
-                          size: 100,
-                        ),
+                        child: const FlutterLogo(size: 100),
                       ),
                     ),
                   ),
@@ -114,8 +109,9 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         // ? Colors.redAccent
                         // : Colors.transparent,
                       ),
-                      borderColor:
-                          changeColor ? Colors.redAccent : Colors.black,
+                      borderColor: changeColor
+                          ? Colors.redAccent
+                          : Colors.black,
                       stripeCount: stripeCountBumper,
                     ),
                     child: Container(
@@ -127,9 +123,7 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         color: showFlutterLogoColor
                             ? Colors.yellow
                             : Colors.transparent,
-                        child: const FlutterLogo(
-                          size: 100,
-                        ),
+                        child: const FlutterLogo(size: 100),
                       ),
                     ),
                   ),
@@ -159,8 +153,9 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         // ? Colors.redAccent
                         // : Colors.transparent,
                       ),
-                      borderColor:
-                          changeColor ? Colors.redAccent : Colors.black,
+                      borderColor: changeColor
+                          ? Colors.redAccent
+                          : Colors.black,
                     ),
                     child: Container(
                       color: showContainerColor
@@ -171,17 +166,13 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         color: showFlutterLogoColor
                             ? Colors.yellow
                             : Colors.transparent,
-                        child: const FlutterLogo(
-                          size: 100,
-                        ),
+                        child: const FlutterLogo(size: 100),
                       ),
                     ),
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 60,
-              ),
+              const SizedBox(height: 60),
               Row(
                 spacing: 20,
                 children: [
@@ -228,9 +219,7 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 60,
-              ),
+              const SizedBox(height: 60),
               Column(
                 children: [
                   Row(
@@ -238,14 +227,15 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                     children: [
                       Text('Change Width---> ${width.toInt()}'),
                       Slider(
-                          value: width,
-                          min: 1,
-                          max: 20,
-                          onChanged: (value) {
-                            setState(() {
-                              width = value;
-                            });
-                          }),
+                        value: width,
+                        min: 1,
+                        max: 20,
+                        onChanged: (value) {
+                          setState(() {
+                            width = value;
+                          });
+                        },
+                      ),
                     ],
                   ),
                   Row(
@@ -253,14 +243,15 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                     children: [
                       Text('Change DentRadius---> ${dentRadius.toInt()}'),
                       Slider(
-                          value: dentRadius,
-                          min: 1,
-                          max: 200,
-                          onChanged: (value) {
-                            setState(() {
-                              dentRadius = value;
-                            });
-                          }),
+                        value: dentRadius,
+                        min: 1,
+                        max: 200,
+                        onChanged: (value) {
+                          setState(() {
+                            dentRadius = value;
+                          });
+                        },
+                      ),
                     ],
                   ),
                   Row(
@@ -268,81 +259,88 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                     children: [
                       Text('Change FlatRadius---> ${flatRadius.toInt()}'),
                       Slider(
-                          value: flatRadius,
-                          min: 1,
-                          max: 200,
-                          onChanged: (value) {
-                            setState(() {
-                              flatRadius = value;
-                            });
-                          }),
+                        value: flatRadius,
+                        min: 1,
+                        max: 200,
+                        onChanged: (value) {
+                          setState(() {
+                            flatRadius = value;
+                          });
+                        },
+                      ),
                     ],
                   ),
-                  const SizedBox(
-                    height: 25,
-                  ),
+                  const SizedBox(height: 25),
                   Row(
                     spacing: 20,
                     children: [
                       Text(
-                          'Change stripeCountPerforated---> ${stripeCountPerforated.toInt()}'),
+                        'Change stripeCountPerforated---> ${stripeCountPerforated.toInt()}',
+                      ),
                       Slider(
-                          value: stripeCountPerforated,
-                          min: 1,
-                          max: 500,
-                          onChanged: (value) {
-                            setState(() {
-                              stripeCountPerforated = value;
-                            });
-                          }),
-                    ],
-                  ),
-                  Row(
-                    spacing: 20,
-                    children: [
-                      Text(
-                          'Change stripeCountWavy---> ${stripeCountWavy.toInt()}'),
-                      Slider(
-                          value: stripeCountWavy,
-                          min: 1,
-                          max: 500,
-                          onChanged: (value) {
-                            setState(() {
-                              stripeCountWavy = value;
-                            });
-                          }),
+                        value: stripeCountPerforated,
+                        min: 1,
+                        max: 500,
+                        onChanged: (value) {
+                          setState(() {
+                            stripeCountPerforated = value;
+                          });
+                        },
+                      ),
                     ],
                   ),
                   Row(
                     spacing: 20,
                     children: [
                       Text(
-                          'Change stripeCountZigZag---> ${stripeCountZigZag.toInt()}'),
+                        'Change stripeCountWavy---> ${stripeCountWavy.toInt()}',
+                      ),
                       Slider(
-                          value: stripeCountZigZag,
-                          min: 1,
-                          max: 500,
-                          onChanged: (value) {
-                            setState(() {
-                              stripeCountZigZag = value;
-                            });
-                          }),
+                        value: stripeCountWavy,
+                        min: 1,
+                        max: 500,
+                        onChanged: (value) {
+                          setState(() {
+                            stripeCountWavy = value;
+                          });
+                        },
+                      ),
                     ],
                   ),
                   Row(
                     spacing: 20,
                     children: [
                       Text(
-                          'Change stripeCountBumper---> ${stripeCountBumper.toInt()}'),
+                        'Change stripeCountZigZag---> ${stripeCountZigZag.toInt()}',
+                      ),
                       Slider(
-                          value: stripeCountBumper,
-                          min: 1,
-                          max: 200,
-                          onChanged: (value) {
-                            setState(() {
-                              stripeCountBumper = value;
-                            });
-                          }),
+                        value: stripeCountZigZag,
+                        min: 1,
+                        max: 500,
+                        onChanged: (value) {
+                          setState(() {
+                            stripeCountZigZag = value;
+                          });
+                        },
+                      ),
+                    ],
+                  ),
+                  Row(
+                    spacing: 20,
+                    children: [
+                      Text(
+                        'Change stripeCountBumper---> ${stripeCountBumper.toInt()}',
+                      ),
+                      Slider(
+                        value: stripeCountBumper,
+                        min: 1,
+                        max: 200,
+                        onChanged: (value) {
+                          setState(() {
+                            stripeCountBumper = value;
+                          });
+                        },
+                      ),
                     ],
                   ),
                   const Text(
@@ -350,9 +348,7 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   ),
-                  const SizedBox(
-                    height: 50,
-                  ),
+                  const SizedBox(height: 50),
                   PerforatedBorder(
                     options: ZigzagBorderOptions(
                       stripeCount: 180,
@@ -364,8 +360,9 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         // ? Colors.redAccent
                         // : Colors.transparent,
                       ),
-                      borderColor:
-                          changeColor ? Colors.redAccent : Colors.black,
+                      borderColor: changeColor
+                          ? Colors.redAccent
+                          : Colors.black,
                     ),
                     child: Container(
                       color: showContainerColor
@@ -376,15 +373,11 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         color: showFlutterLogoColor
                             ? Colors.yellow
                             : Colors.transparent,
-                        child: const FlutterLogo(
-                          size: 100,
-                        ),
+                        child: const FlutterLogo(size: 100),
                       ),
                     ),
                   ),
-                  const SizedBox(
-                    height: 180,
-                  ),
+                  const SizedBox(height: 180),
                   PerforatedBorder(
                     options: WavyBorderOptions(
                       stripeCount: 180,
@@ -396,8 +389,9 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         // ? Colors.redAccent
                         // : Colors.transparent,
                       ),
-                      borderColor:
-                          changeColor ? Colors.redAccent : Colors.black,
+                      borderColor: changeColor
+                          ? Colors.redAccent
+                          : Colors.black,
                     ),
                     child: Container(
                       color: showContainerColor
@@ -408,15 +402,11 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         color: showFlutterLogoColor
                             ? Colors.yellow
                             : Colors.transparent,
-                        child: const FlutterLogo(
-                          size: 100,
-                        ),
+                        child: const FlutterLogo(size: 100),
                       ),
                     ),
                   ),
-                  const SizedBox(
-                    height: 280,
-                  ),
+                  const SizedBox(height: 280),
                   PerforatedBorder(
                     options: BumperBorderOptions(
                       stripeCount: 180,
@@ -428,8 +418,9 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         // ? Colors.redAccent
                         // : Colors.transparent,
                       ),
-                      borderColor:
-                          changeColor ? Colors.redAccent : Colors.black,
+                      borderColor: changeColor
+                          ? Colors.redAccent
+                          : Colors.black,
                     ),
                     child: Container(
                       color: showContainerColor
@@ -440,15 +431,11 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         color: showFlutterLogoColor
                             ? Colors.yellow
                             : Colors.transparent,
-                        child: const FlutterLogo(
-                          size: 100,
-                        ),
+                        child: const FlutterLogo(size: 100),
                       ),
                     ),
                   ),
-                  const SizedBox(
-                    height: 180,
-                  ),
+                  const SizedBox(height: 180),
                   PerforatedBorder(
                     options: PerforatedBorderOptions(
                       flatWidth: 1,
@@ -462,8 +449,9 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         // ? Colors.redAccent
                         // : Colors.transparent,
                       ),
-                      borderColor:
-                          changeColor ? Colors.redAccent : Colors.black,
+                      borderColor: changeColor
+                          ? Colors.redAccent
+                          : Colors.black,
                     ),
                     child: Container(
                       color: showContainerColor
@@ -474,15 +462,11 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                         color: showFlutterLogoColor
                             ? Colors.yellow
                             : Colors.transparent,
-                        child: const FlutterLogo(
-                          size: 100,
-                        ),
+                        child: const FlutterLogo(size: 100),
                       ),
                     ),
                   ),
-                  const SizedBox(
-                    height: 180,
-                  ),
+                  const SizedBox(height: 180),
                 ],
               ),
             ],

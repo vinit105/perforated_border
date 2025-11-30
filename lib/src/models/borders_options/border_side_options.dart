@@ -29,14 +29,14 @@ class BorderSideOptions {
     this.borderSideType = BorderSideType.horizontal,
     this.style = PaintingStyle.stroke,
   }) : assert(
-      borderSideType == BorderSideType.vertical ||
-      borderSideType == BorderSideType.horizontal,
-  'BorderSideType must be horizontal or vertical',
-  );
+         borderSideType == BorderSideType.vertical ||
+             borderSideType == BorderSideType.horizontal,
+         'BorderSideType must be horizontal or vertical',
+       );
 
   const BorderSideOptions.allSides({
     this.strokeWidth = 1.0,
     this.style = PaintingStyle.stroke,
-    this.color = Colors.  black,
+    this.color = Colors.black,
   }) : borderSideType = BorderSideType.allSides;
 }

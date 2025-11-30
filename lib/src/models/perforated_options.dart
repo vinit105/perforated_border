@@ -7,7 +7,9 @@ abstract class PerforatedBordersOptions {
     this.stripeCount = 10,
     this.borderColor = Colors.black,
     this.paint,
-    @Deprecated('This property is not used yet and may be removed in future versions.')
+    @Deprecated(
+      'This property is not used yet and may be removed in future versions.',
+    )
     this.stampValue = false,
   });
 
@@ -17,6 +19,8 @@ abstract class PerforatedBordersOptions {
 
   final Paint? paint;
 
-  @Deprecated('This property is not used yet and may be removed in future versions.')
+  @Deprecated(
+    'This property is not used yet and may be removed in future versions.',
+  )
   final bool stampValue;
 }

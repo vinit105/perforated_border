@@ -43,7 +43,9 @@ class BumpDemoRowWidget extends StatelessWidget {
                 Text(
                   row.title,
                   style: const TextStyle(
-                      fontSize: 16, fontWeight: FontWeight.bold),
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 const SizedBox(height: 4),
                 Text(row.description),
@@ -65,7 +67,7 @@ class BumpBordersDemoWidget extends StatelessWidget {
     BumpDemoRow(
       title: 'Bump Border Fill',
       description:
-      'Height & width: 100, padding:20, Filled\nStripe count: 15, dent radius: 6, flatWidth: 4',
+          'Height & width: 100, padding:20, Filled\nStripe count: 15, dent radius: 6, flatWidth: 4',
       options: BumperBorderOptions(
         paint: Paint()
           ..strokeWidth = 2
@@ -83,17 +85,15 @@ class BumpBordersDemoWidget extends StatelessWidget {
     BumpDemoRow(
       title: 'Bump Border Stroke',
       description:
-      'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
       options: const BumperBorderOptions(
-
-
         // paint: Paint()
         //   ..strokeWidth = 2
         //   ..color = Colors.blueAccent
         //   ..style = PaintingStyle.stroke,
         stripeCount: 20,
         stampValue: false,
-        borderSideOptions:  BorderSideOptions.allSides(
+        borderSideOptions: BorderSideOptions.allSides(
           // color: Colors.green,
           style: PaintingStyle.stroke,
         ),
@@ -103,10 +103,8 @@ class BumpBordersDemoWidget extends StatelessWidget {
     BumpDemoRow(
       title: 'Bump Border H-Symmetric Filled',
       description:
-      'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
       options: const BumperBorderOptions(
-
-
         // paint: Paint()
         //   ..strokeWidth = 2
         //   ..color = Colors.blueAccent
@@ -124,10 +122,8 @@ class BumpBordersDemoWidget extends StatelessWidget {
     BumpDemoRow(
       title: 'Bump Border V-Symmetric Stroke',
       description:
-      'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
       options: const BumperBorderOptions(
-
-
         // paint: Paint()
         //   ..strokeWidth = 2
         //   ..color = Colors.blueAccent
@@ -141,13 +137,12 @@ class BumpBordersDemoWidget extends StatelessWidget {
         ),
         borderColor: Colors.deepPurpleAccent,
       ),
-    ), BumpDemoRow(
+    ),
+    BumpDemoRow(
       title: 'Bump Border H-Symmetric Stroke',
       description:
-      'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
       options: const BumperBorderOptions(
-
-
         // paint: Paint()
         //   ..strokeWidth = 2
         //   ..color = Colors.blueAccent
@@ -165,10 +160,8 @@ class BumpBordersDemoWidget extends StatelessWidget {
     BumpDemoRow(
       title: 'Bump Border V-Symmetric filled',
       description:
-      'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
       options: const BumperBorderOptions(
-
-
         // paint: Paint()
         //   ..strokeWidth = 2
         //   ..color = Colors.blueAccent
@@ -186,10 +179,8 @@ class BumpBordersDemoWidget extends StatelessWidget {
     BumpDemoRow(
       title: 'Bump Border Left Filled',
       description:
-      'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
       options: const BumperBorderOptions(
-
-
         // paint: Paint()
         //   ..strokeWidth = 2
         //   ..color = Colors.blueAccent
@@ -207,10 +198,8 @@ class BumpBordersDemoWidget extends StatelessWidget {
     BumpDemoRow(
       title: 'Bump Border Left Stroke',
       description:
-      'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
       options: const BumperBorderOptions(
-
-
         // paint: Paint()
         //   ..strokeWidth = 2
         //   ..color = Colors.blueAccent
@@ -228,10 +217,8 @@ class BumpBordersDemoWidget extends StatelessWidget {
     BumpDemoRow(
       title: 'Bump Border Top Filled',
       description:
-      'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
       options: const BumperBorderOptions(
-
-
         // paint: Paint()
         //   ..strokeWidth = 2
         //   ..color = Colors.blueAccent
@@ -249,10 +236,8 @@ class BumpBordersDemoWidget extends StatelessWidget {
     BumpDemoRow(
       title: 'Bump Border Top Stroke',
       description:
-      'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
       options: const BumperBorderOptions(
-
-
         // paint: Paint()
         //   ..strokeWidth = 2
         //   ..color = Colors.blueAccent
@@ -270,10 +255,8 @@ class BumpBordersDemoWidget extends StatelessWidget {
     BumpDemoRow(
       title: 'Bump Border Right Filled',
       description:
-      'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
       options: const BumperBorderOptions(
-
-
         // paint: Paint()
         //   ..strokeWidth = 2
         //   ..color = Colors.blueAccent
@@ -291,10 +274,8 @@ class BumpBordersDemoWidget extends StatelessWidget {
     BumpDemoRow(
       title: 'Bump Border Right Stroke',
       description:
-      'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
       options: const BumperBorderOptions(
-
-
         // paint: Paint()
         //   ..strokeWidth = 2
         //   ..color = Colors.blueAccent
@@ -312,10 +293,8 @@ class BumpBordersDemoWidget extends StatelessWidget {
     BumpDemoRow(
       title: 'Bump Border Bottom Filled',
       description:
-      'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
       options: const BumperBorderOptions(
-
-
         // paint: Paint()
         //   ..strokeWidth = 2
         //   ..color = Colors.blueAccent
@@ -333,10 +312,8 @@ class BumpBordersDemoWidget extends StatelessWidget {
     BumpDemoRow(
       title: 'Bump Border Bottom Stroke',
       description:
-      'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
       options: const BumperBorderOptions(
-
-
         // paint: Paint()
         //   ..strokeWidth = 2
         //   ..color = Colors.blueAccent
@@ -352,7 +329,6 @@ class BumpBordersDemoWidget extends StatelessWidget {
       ),
     ),
 
-
     // Add more rows here...
   ];
 
@@ -361,8 +337,7 @@ class BumpBordersDemoWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(16),
       child: Column(
-        children:
-        demoRows.map((row) => BumpDemoRowWidget(row: row)).toList(),
+        children: demoRows.map((row) => BumpDemoRowWidget(row: row)).toList(),
       ),
     );
   }

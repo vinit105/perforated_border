@@ -1,8 +1,6 @@
-
 import 'dart:ui';
 import 'package:flutter/cupertino.dart' show CustomPainter;
 import 'package:perforated_border/perforated_border.dart';
-
 
 class WavyBorderPainter extends CustomPainter {
   final WavyBorderOptions options;
@@ -18,32 +16,31 @@ class WavyBorderPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     bool drawTop =
         options.borderSideOptions.borderSideType == BorderSideType.top ||
-            options.borderSideOptions.borderSideType == BorderSideType.allSides ||
-            options.borderSideOptions.borderSideType == BorderSideType.vertical;
+        options.borderSideOptions.borderSideType == BorderSideType.allSides ||
+        options.borderSideOptions.borderSideType == BorderSideType.vertical;
 
     bool drawBottom =
         options.borderSideOptions.borderSideType == BorderSideType.bottom ||
-            options.borderSideOptions.borderSideType == BorderSideType.allSides ||
-            options.borderSideOptions.borderSideType == BorderSideType.vertical;
+        options.borderSideOptions.borderSideType == BorderSideType.allSides ||
+        options.borderSideOptions.borderSideType == BorderSideType.vertical;
 
     bool drawLeft =
         options.borderSideOptions.borderSideType == BorderSideType.left ||
-            options.borderSideOptions.borderSideType == BorderSideType.allSides ||
-            options.borderSideOptions.borderSideType == BorderSideType.horizontal;
+        options.borderSideOptions.borderSideType == BorderSideType.allSides ||
+        options.borderSideOptions.borderSideType == BorderSideType.horizontal;
 
     bool drawRight =
         options.borderSideOptions.borderSideType == BorderSideType.right ||
-            options.borderSideOptions.borderSideType == BorderSideType.allSides ||
-            options.borderSideOptions.borderSideType == BorderSideType.horizontal;
+        options.borderSideOptions.borderSideType == BorderSideType.allSides ||
+        options.borderSideOptions.borderSideType == BorderSideType.horizontal;
     final path = Path();
     double step = options.stripeCount;
     final paint =
         options.paint ??
-            (Paint()
-              ..strokeWidth = options.borderSideOptions.strokeWidth
-              ..color = options.borderColor
-              ..style = options.borderSideOptions.style);
-
+        (Paint()
+          ..strokeWidth = options.borderSideOptions.strokeWidth
+          ..color = options.borderColor
+          ..style = options.borderSideOptions.style);
 
     ///
     if (drawTop) {
@@ -66,9 +63,7 @@ class WavyBorderPainter extends CustomPainter {
           clockwise: true,
         );
       }
-    }
-    else {
-
+    } else {
       for (double x = 0; x < size.width; x += step) {
         if (x == size.width + step) {
           path.lineTo(x - step, size.height);
@@ -95,8 +90,7 @@ class WavyBorderPainter extends CustomPainter {
           clockwise: true,
         );
       }
-    }
-    else {
+    } else {
       for (double y = 0 - step; y < size.height; y += step) {
         if (y == 0 - step) {
           path.lineTo(size.width, y + step);
@@ -123,8 +117,7 @@ class WavyBorderPainter extends CustomPainter {
           clockwise: true,
         );
       }
-    }
-    else {
+    } else {
       for (double x = size.width + step; x > 0; x -= step) {
         if (x == size.width + step) {
           path.lineTo(x - step, size.height);
@@ -151,8 +144,7 @@ class WavyBorderPainter extends CustomPainter {
           clockwise: true,
         );
       }
-    }
-    else {
+    } else {
       for (double y = size.height + step; y > 0; y -= step) {
         if (y == size.height + step) {
           path.lineTo(0, y - step);
@@ -165,4 +157,3 @@ class WavyBorderPainter extends CustomPainter {
     canvas.drawPath(path, paint);
   }
 }
-

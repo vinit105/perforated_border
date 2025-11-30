@@ -25,9 +25,6 @@ class PerforatedBorder extends StatelessWidget {
       _ => throw UnsupportedError("Unknown border type"),
     };
 
-    return CustomPaint(
-      painter: painter,
-      child: child,
-    );
+    return CustomPaint(painter: painter, child: child);
   }
 }

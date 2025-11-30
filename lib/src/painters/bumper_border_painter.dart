@@ -66,7 +66,6 @@ class BumperBorderPainter extends CustomPainter {
         path.quadraticBezierTo(x + w / 2, -amp, x + w, 0);
       }
     } else {
-
       for (double x = 0; x < size.width; x += step) {
         if (x == size.width + step) {
           path.lineTo(x - step, size.height);
