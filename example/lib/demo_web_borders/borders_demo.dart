@@ -124,7 +124,6 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                       ),
                     ),
                   ),
-
                   PerforatedBorder(
                     options: PerforatedBorderOptions(
                       flatWidth: flatRadius,
@@ -447,9 +446,7 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
                     ),
                   ),
                   const SizedBox(height: 180),
-
-
-          ],
+                ],
               ),
             ],
           ),
@@ -458,6 +455,7 @@ class _WebViwAllBordersState extends State<WebViwAllBorders> {
     );
   }
 }
+
 class CoffeeImageBox extends StatelessWidget {
   final String url;
 

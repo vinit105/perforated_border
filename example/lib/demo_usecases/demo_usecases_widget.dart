@@ -190,8 +190,8 @@ class _DemoUseCasesWidgetState extends State<DemoUseCasesWidget> {
                         const Row(
                           children: [
                             Icon(Icons.cookie, color: Colors.white, size: 18),
-                             SizedBox(width: 6),
-                             Text(
+                            SizedBox(width: 6),
+                            Text(
                               "Dark Cocoa 72%",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 14),
@@ -203,8 +203,8 @@ class _DemoUseCasesWidgetState extends State<DemoUseCasesWidget> {
                           children: [
                             Icon(Icons.local_cafe,
                                 color: Colors.white, size: 18),
-                             SizedBox(width: 6),
-                             Text(
+                            SizedBox(width: 6),
+                            Text(
                               "Smooth Melt Texture",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 14),
@@ -238,7 +238,7 @@ class _DemoUseCasesWidgetState extends State<DemoUseCasesWidget> {
                             BoxShadow(
                               blurRadius: 8,
                               spreadRadius: 1,
-                              color: Colors.black.withValues(alpha:0.25),
+                              color: Colors.black.withValues(alpha: 0.25),
                               offset: const Offset(2, 3),
                             ),
                           ],
@@ -315,7 +315,7 @@ class _DemoUseCasesWidgetState extends State<DemoUseCasesWidget> {
                         Shadow(
                           blurRadius: 12,
                           offset: const Offset(2, 3),
-                          color: Colors.black.withValues(alpha:0.35),
+                          color: Colors.black.withValues(alpha: 0.35),
                         )
                       ],
                     ),
@@ -371,7 +371,7 @@ class _DemoUseCasesWidgetState extends State<DemoUseCasesWidget> {
                   // ⭐ Key highlights
                   const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children:  [
+                    children: [
                       Row(
                         children: [
                           Icon(Icons.check_circle,
@@ -492,8 +492,8 @@ class _DemoUseCasesWidgetState extends State<DemoUseCasesWidget> {
                         const Row(
                           children: [
                             Icon(Icons.cookie, color: Colors.white, size: 18),
-                             SizedBox(width: 6),
-                             Text(
+                            SizedBox(width: 6),
+                            Text(
                               "Dark Cocoa 72%",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 14),
@@ -505,8 +505,8 @@ class _DemoUseCasesWidgetState extends State<DemoUseCasesWidget> {
                           children: [
                             Icon(Icons.local_cafe,
                                 color: Colors.white, size: 18),
-                             SizedBox(width: 6),
-                             Text(
+                            SizedBox(width: 6),
+                            Text(
                               "Smooth Melt Texture",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 14),
@@ -540,7 +540,7 @@ class _DemoUseCasesWidgetState extends State<DemoUseCasesWidget> {
                             BoxShadow(
                               blurRadius: 8,
                               spreadRadius: 1,
-                              color: Colors.black.withValues(alpha:0.25),
+                              color: Colors.black.withValues(alpha: 0.25),
                               offset: const Offset(2, 3),
                             ),
                           ],
@@ -638,8 +638,8 @@ class _DemoUseCasesWidgetState extends State<DemoUseCasesWidget> {
                         const Row(
                           children: [
                             Icon(Icons.cookie, color: Colors.white, size: 18),
-                             SizedBox(width: 6),
-                             Text(
+                            SizedBox(width: 6),
+                            Text(
                               "Dark Cocoa 72%",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 14),
@@ -651,8 +651,8 @@ class _DemoUseCasesWidgetState extends State<DemoUseCasesWidget> {
                           children: [
                             Icon(Icons.local_cafe,
                                 color: Colors.white, size: 18),
-                             SizedBox(width: 6),
-                             Text(
+                            SizedBox(width: 6),
+                            Text(
                               "Smooth Melt Texture",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 14),
@@ -686,7 +686,7 @@ class _DemoUseCasesWidgetState extends State<DemoUseCasesWidget> {
                             BoxShadow(
                               blurRadius: 8,
                               spreadRadius: 1,
-                              color: Colors.black.withValues(alpha:0.25),
+                              color: Colors.black.withValues(alpha: 0.25),
                               offset: const Offset(2, 3),
                             ),
                           ],
@@ -760,7 +760,7 @@ class _DemoUseCasesWidgetState extends State<DemoUseCasesWidget> {
                       const SizedBox(
                         width: 65,
                         height: 90,
-                        child:  Icon(
+                        child: Icon(
                           Icons.movie,
                           color: Colors.white,
                           size: 38,
@@ -868,7 +868,6 @@ class _DemoUseCasesWidgetState extends State<DemoUseCasesWidget> {
             ),
             child: Container(
               padding: const EdgeInsets.all(20),
-
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -883,14 +882,19 @@ class _DemoUseCasesWidgetState extends State<DemoUseCasesWidget> {
                           borderRadius: BorderRadius.circular(12),
                           boxShadow: [
                             BoxShadow(
-                              color: const Color(0xFF8E44FD).withValues(alpha:0.4),
+                              color: const Color(0xFF8E44FD)
+                                  .withValues(alpha: 0.4),
                               blurRadius: 1,
                               spreadRadius: 1,
                               offset: const Offset(2, 3),
                             ),
                           ],
                         ),
-                        child: const Icon(Icons.qr_code,size: 75,color: Colors.white,),
+                        child: const Icon(
+                          Icons.qr_code,
+                          size: 75,
+                          color: Colors.white,
+                        ),
                       ),
 
                       const SizedBox(width: 18),
@@ -919,7 +923,7 @@ class _DemoUseCasesWidgetState extends State<DemoUseCasesWidget> {
                             ),
                             const SizedBox(height: 16),
                             const Row(
-                              children:  [
+                              children: [
                                 Icon(Icons.calendar_today,
                                     color: Colors.white, size: 18),
                                 SizedBox(width: 6),
@@ -931,7 +935,7 @@ class _DemoUseCasesWidgetState extends State<DemoUseCasesWidget> {
                             ),
                             const SizedBox(height: 6),
                             const Row(
-                              children:  [
+                              children: [
                                 Icon(Icons.access_time,
                                     color: Colors.white, size: 18),
                                 SizedBox(width: 6),

@@ -64,273 +64,273 @@ class WavyBordersDemoWidget extends StatelessWidget {
 
   /// Static list of demo rows
   List<WavyDemoRow> get demoRows => [
-    WavyDemoRow(
-      title: 'Wavy Border Fill',
-      description:
-          'Height & width: 100, padding:20, Filled\nStripe count: 15, dent radius: 6, flatWidth: 4',
-      options: WavyBorderOptions(
-        paint: Paint()
-          ..strokeWidth = 2
-          ..color = Colors.blueAccent
-          ..style = PaintingStyle.fill,
-        stripeCount: 20,
-        stampValue: false,
-        borderSideOptions: const BorderSideOptions.allSides(
-          // color: Colors.green,
-          style: PaintingStyle.fill,
+        WavyDemoRow(
+          title: 'Wavy Border Fill',
+          description:
+              'Height & width: 100, padding:20, Filled\nStripe count: 15, dent radius: 6, flatWidth: 4',
+          options: WavyBorderOptions(
+            paint: Paint()
+              ..strokeWidth = 2
+              ..color = Colors.blueAccent
+              ..style = PaintingStyle.fill,
+            stripeCount: 20,
+            stampValue: false,
+            borderSideOptions: const BorderSideOptions.allSides(
+              // color: Colors.green,
+              style: PaintingStyle.fill,
+            ),
+            // borderColor: Colors.red,
+          ),
         ),
-        // borderColor: Colors.red,
-      ),
-    ),
-    WavyDemoRow(
-      title: 'Wavy Border Stroke',
-      description:
-          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
-      options: const WavyBorderOptions(
-        // paint: Paint()
-        //   ..strokeWidth = 2
-        //   ..color = Colors.blueAccent
-        //   ..style = PaintingStyle.stroke,
-        stripeCount: 20,
-        stampValue: false,
-        borderSideOptions: BorderSideOptions.allSides(
-          // color: Colors.green,
-          style: PaintingStyle.stroke,
+        WavyDemoRow(
+          title: 'Wavy Border Stroke',
+          description:
+              'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          options: const WavyBorderOptions(
+            // paint: Paint()
+            //   ..strokeWidth = 2
+            //   ..color = Colors.blueAccent
+            //   ..style = PaintingStyle.stroke,
+            stripeCount: 20,
+            stampValue: false,
+            borderSideOptions: BorderSideOptions.allSides(
+              // color: Colors.green,
+              style: PaintingStyle.stroke,
+            ),
+            borderColor: Colors.red,
+          ),
         ),
-        borderColor: Colors.red,
-      ),
-    ),
-    WavyDemoRow(
-      title: 'Wavy Border H-Symmetric Filled',
-      description:
-          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
-      options: const WavyBorderOptions(
-        // paint: Paint()
-        //   ..strokeWidth = 2
-        //   ..color = Colors.blueAccent
-        //   ..style = PaintingStyle.stroke,
-        stripeCount: 20,
-        stampValue: false,
-        borderSideOptions: BorderSideOptions.symmetric(
-          borderSideType: BorderSideType.horizontal,
-          // color: Colors.green,
-          style: PaintingStyle.fill,
+        WavyDemoRow(
+          title: 'Wavy Border H-Symmetric Filled',
+          description:
+              'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          options: const WavyBorderOptions(
+            // paint: Paint()
+            //   ..strokeWidth = 2
+            //   ..color = Colors.blueAccent
+            //   ..style = PaintingStyle.stroke,
+            stripeCount: 20,
+            stampValue: false,
+            borderSideOptions: BorderSideOptions.symmetric(
+              borderSideType: BorderSideType.horizontal,
+              // color: Colors.green,
+              style: PaintingStyle.fill,
+            ),
+            borderColor: Colors.orangeAccent,
+          ),
         ),
-        borderColor: Colors.orangeAccent,
-      ),
-    ),
-    WavyDemoRow(
-      title: 'Wavy Border V-Symmetric Stroke',
-      description:
-          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
-      options: const WavyBorderOptions(
-        // paint: Paint()
-        //   ..strokeWidth = 2
-        //   ..color = Colors.blueAccent
-        //   ..style = PaintingStyle.stroke,
-        stripeCount: 20,
-        stampValue: false,
-        borderSideOptions: BorderSideOptions.symmetric(
-          borderSideType: BorderSideType.vertical,
-          // color: Colors.green,
-          style: PaintingStyle.stroke,
+        WavyDemoRow(
+          title: 'Wavy Border V-Symmetric Stroke',
+          description:
+              'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          options: const WavyBorderOptions(
+            // paint: Paint()
+            //   ..strokeWidth = 2
+            //   ..color = Colors.blueAccent
+            //   ..style = PaintingStyle.stroke,
+            stripeCount: 20,
+            stampValue: false,
+            borderSideOptions: BorderSideOptions.symmetric(
+              borderSideType: BorderSideType.vertical,
+              // color: Colors.green,
+              style: PaintingStyle.stroke,
+            ),
+            borderColor: Colors.deepPurpleAccent,
+          ),
         ),
-        borderColor: Colors.deepPurpleAccent,
-      ),
-    ),
-    WavyDemoRow(
-      title: 'Wavy Border H-Symmetric Stroke',
-      description:
-          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
-      options: const WavyBorderOptions(
-        // paint: Paint()
-        //   ..strokeWidth = 2
-        //   ..color = Colors.blueAccent
-        //   ..style = PaintingStyle.stroke,
-        stripeCount: 20,
-        stampValue: false,
-        borderSideOptions: BorderSideOptions.symmetric(
-          borderSideType: BorderSideType.horizontal,
-          // color: Colors.green,
-          style: PaintingStyle.stroke,
+        WavyDemoRow(
+          title: 'Wavy Border H-Symmetric Stroke',
+          description:
+              'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          options: const WavyBorderOptions(
+            // paint: Paint()
+            //   ..strokeWidth = 2
+            //   ..color = Colors.blueAccent
+            //   ..style = PaintingStyle.stroke,
+            stripeCount: 20,
+            stampValue: false,
+            borderSideOptions: BorderSideOptions.symmetric(
+              borderSideType: BorderSideType.horizontal,
+              // color: Colors.green,
+              style: PaintingStyle.stroke,
+            ),
+            borderColor: Colors.orangeAccent,
+          ),
         ),
-        borderColor: Colors.orangeAccent,
-      ),
-    ),
-    WavyDemoRow(
-      title: 'Wavy Border V-Symmetric filled',
-      description:
-          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
-      options: const WavyBorderOptions(
-        // paint: Paint()
-        //   ..strokeWidth = 2
-        //   ..color = Colors.blueAccent
-        //   ..style = PaintingStyle.stroke,
-        stripeCount: 20,
-        stampValue: false,
-        borderSideOptions: BorderSideOptions.symmetric(
-          borderSideType: BorderSideType.vertical,
-          // color: Colors.green,
-          style: PaintingStyle.fill,
+        WavyDemoRow(
+          title: 'Wavy Border V-Symmetric filled',
+          description:
+              'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          options: const WavyBorderOptions(
+            // paint: Paint()
+            //   ..strokeWidth = 2
+            //   ..color = Colors.blueAccent
+            //   ..style = PaintingStyle.stroke,
+            stripeCount: 20,
+            stampValue: false,
+            borderSideOptions: BorderSideOptions.symmetric(
+              borderSideType: BorderSideType.vertical,
+              // color: Colors.green,
+              style: PaintingStyle.fill,
+            ),
+            borderColor: Colors.deepPurpleAccent,
+          ),
         ),
-        borderColor: Colors.deepPurpleAccent,
-      ),
-    ),
-    WavyDemoRow(
-      title: 'Wavy Border Left Filled',
-      description:
-          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
-      options: const WavyBorderOptions(
-        // paint: Paint()
-        //   ..strokeWidth = 2
-        //   ..color = Colors.blueAccent
-        //   ..style = PaintingStyle.stroke,
-        stripeCount: 20,
-        stampValue: false,
-        borderSideOptions: BorderSideOptions.only(
-          borderSideType: BorderSideType.left,
-          // color: Colors.green,
-          style: PaintingStyle.fill,
+        WavyDemoRow(
+          title: 'Wavy Border Left Filled',
+          description:
+              'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          options: const WavyBorderOptions(
+            // paint: Paint()
+            //   ..strokeWidth = 2
+            //   ..color = Colors.blueAccent
+            //   ..style = PaintingStyle.stroke,
+            stripeCount: 20,
+            stampValue: false,
+            borderSideOptions: BorderSideOptions.only(
+              borderSideType: BorderSideType.left,
+              // color: Colors.green,
+              style: PaintingStyle.fill,
+            ),
+            borderColor: Colors.red,
+          ),
         ),
-        borderColor: Colors.red,
-      ),
-    ),
-    WavyDemoRow(
-      title: 'Wavy Border Left Stroke',
-      description:
-          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
-      options: const WavyBorderOptions(
-        // paint: Paint()
-        //   ..strokeWidth = 2
-        //   ..color = Colors.blueAccent
-        //   ..style = PaintingStyle.stroke,
-        stripeCount: 20,
-        stampValue: false,
-        borderSideOptions: BorderSideOptions.only(
-          borderSideType: BorderSideType.left,
-          // color: Colors.green,
-          style: PaintingStyle.stroke,
+        WavyDemoRow(
+          title: 'Wavy Border Left Stroke',
+          description:
+              'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          options: const WavyBorderOptions(
+            // paint: Paint()
+            //   ..strokeWidth = 2
+            //   ..color = Colors.blueAccent
+            //   ..style = PaintingStyle.stroke,
+            stripeCount: 20,
+            stampValue: false,
+            borderSideOptions: BorderSideOptions.only(
+              borderSideType: BorderSideType.left,
+              // color: Colors.green,
+              style: PaintingStyle.stroke,
+            ),
+            borderColor: Colors.red,
+          ),
         ),
-        borderColor: Colors.red,
-      ),
-    ),
-    WavyDemoRow(
-      title: 'Wavy Border Top Filled',
-      description:
-          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
-      options: const WavyBorderOptions(
-        // paint: Paint()
-        //   ..strokeWidth = 2
-        //   ..color = Colors.blueAccent
-        //   ..style = PaintingStyle.stroke,
-        stripeCount: 20,
-        stampValue: false,
-        borderSideOptions: BorderSideOptions.only(
-          borderSideType: BorderSideType.top,
-          // color: Colors.green,
-          style: PaintingStyle.fill,
+        WavyDemoRow(
+          title: 'Wavy Border Top Filled',
+          description:
+              'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          options: const WavyBorderOptions(
+            // paint: Paint()
+            //   ..strokeWidth = 2
+            //   ..color = Colors.blueAccent
+            //   ..style = PaintingStyle.stroke,
+            stripeCount: 20,
+            stampValue: false,
+            borderSideOptions: BorderSideOptions.only(
+              borderSideType: BorderSideType.top,
+              // color: Colors.green,
+              style: PaintingStyle.fill,
+            ),
+            borderColor: Colors.pink,
+          ),
         ),
-        borderColor: Colors.pink,
-      ),
-    ),
-    WavyDemoRow(
-      title: 'Wavy Border Top Stroke',
-      description:
-          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
-      options: const WavyBorderOptions(
-        // paint: Paint()
-        //   ..strokeWidth = 2
-        //   ..color = Colors.blueAccent
-        //   ..style = PaintingStyle.stroke,
-        stripeCount: 20,
-        stampValue: false,
-        borderSideOptions: BorderSideOptions.only(
-          borderSideType: BorderSideType.top,
-          // color: Colors.green,
-          style: PaintingStyle.stroke,
+        WavyDemoRow(
+          title: 'Wavy Border Top Stroke',
+          description:
+              'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          options: const WavyBorderOptions(
+            // paint: Paint()
+            //   ..strokeWidth = 2
+            //   ..color = Colors.blueAccent
+            //   ..style = PaintingStyle.stroke,
+            stripeCount: 20,
+            stampValue: false,
+            borderSideOptions: BorderSideOptions.only(
+              borderSideType: BorderSideType.top,
+              // color: Colors.green,
+              style: PaintingStyle.stroke,
+            ),
+            borderColor: Colors.pink,
+          ),
         ),
-        borderColor: Colors.pink,
-      ),
-    ),
-    WavyDemoRow(
-      title: 'Wavy Border Right Filled',
-      description:
-          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
-      options: const WavyBorderOptions(
-        // paint: Paint()
-        //   ..strokeWidth = 2
-        //   ..color = Colors.blueAccent
-        //   ..style = PaintingStyle.stroke,
-        stripeCount: 20,
-        stampValue: false,
-        borderSideOptions: BorderSideOptions.only(
-          borderSideType: BorderSideType.right,
-          // color: Colors.green,
-          style: PaintingStyle.fill,
+        WavyDemoRow(
+          title: 'Wavy Border Right Filled',
+          description:
+              'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          options: const WavyBorderOptions(
+            // paint: Paint()
+            //   ..strokeWidth = 2
+            //   ..color = Colors.blueAccent
+            //   ..style = PaintingStyle.stroke,
+            stripeCount: 20,
+            stampValue: false,
+            borderSideOptions: BorderSideOptions.only(
+              borderSideType: BorderSideType.right,
+              // color: Colors.green,
+              style: PaintingStyle.fill,
+            ),
+            borderColor: Colors.black,
+          ),
         ),
-        borderColor: Colors.black,
-      ),
-    ),
-    WavyDemoRow(
-      title: 'Wavy Border Right Stroke',
-      description:
-          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
-      options: const WavyBorderOptions(
-        // paint: Paint()
-        //   ..strokeWidth = 2
-        //   ..color = Colors.blueAccent
-        //   ..style = PaintingStyle.stroke,
-        stripeCount: 20,
-        stampValue: false,
-        borderSideOptions: BorderSideOptions.only(
-          borderSideType: BorderSideType.right,
-          // color: Colors.green,
-          style: PaintingStyle.stroke,
+        WavyDemoRow(
+          title: 'Wavy Border Right Stroke',
+          description:
+              'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          options: const WavyBorderOptions(
+            // paint: Paint()
+            //   ..strokeWidth = 2
+            //   ..color = Colors.blueAccent
+            //   ..style = PaintingStyle.stroke,
+            stripeCount: 20,
+            stampValue: false,
+            borderSideOptions: BorderSideOptions.only(
+              borderSideType: BorderSideType.right,
+              // color: Colors.green,
+              style: PaintingStyle.stroke,
+            ),
+            borderColor: Colors.black,
+          ),
         ),
-        borderColor: Colors.black,
-      ),
-    ),
-    WavyDemoRow(
-      title: 'Wavy Border Bottom Filled',
-      description:
-          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
-      options: const WavyBorderOptions(
-        // paint: Paint()
-        //   ..strokeWidth = 2
-        //   ..color = Colors.blueAccent
-        //   ..style = PaintingStyle.stroke,
-        stripeCount: 20,
-        stampValue: false,
-        borderSideOptions: BorderSideOptions.only(
-          borderSideType: BorderSideType.bottom,
-          // color: Colors.green,
-          style: PaintingStyle.fill,
+        WavyDemoRow(
+          title: 'Wavy Border Bottom Filled',
+          description:
+              'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          options: const WavyBorderOptions(
+            // paint: Paint()
+            //   ..strokeWidth = 2
+            //   ..color = Colors.blueAccent
+            //   ..style = PaintingStyle.stroke,
+            stripeCount: 20,
+            stampValue: false,
+            borderSideOptions: BorderSideOptions.only(
+              borderSideType: BorderSideType.bottom,
+              // color: Colors.green,
+              style: PaintingStyle.fill,
+            ),
+            borderColor: Colors.greenAccent,
+          ),
         ),
-        borderColor: Colors.greenAccent,
-      ),
-    ),
-    WavyDemoRow(
-      title: 'Wavy Border Bottom Stroke',
-      description:
-          'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
-      options: const WavyBorderOptions(
-        // paint: Paint()
-        //   ..strokeWidth = 2
-        //   ..color = Colors.blueAccent
-        //   ..style = PaintingStyle.stroke,
-        stripeCount: 20,
-        stampValue: false,
-        borderSideOptions: BorderSideOptions.only(
-          borderSideType: BorderSideType.bottom,
-          // color: Colors.green,
-          style: PaintingStyle.stroke,
+        WavyDemoRow(
+          title: 'Wavy Border Bottom Stroke',
+          description:
+              'Height & width: 100, padding:20, \nStripe count: 15, dent radius: 6, flatWidth: 4',
+          options: const WavyBorderOptions(
+            // paint: Paint()
+            //   ..strokeWidth = 2
+            //   ..color = Colors.blueAccent
+            //   ..style = PaintingStyle.stroke,
+            stripeCount: 20,
+            stampValue: false,
+            borderSideOptions: BorderSideOptions.only(
+              borderSideType: BorderSideType.bottom,
+              // color: Colors.green,
+              style: PaintingStyle.stroke,
+            ),
+            borderColor: Colors.greenAccent,
+          ),
         ),
-        borderColor: Colors.greenAccent,
-      ),
-    ),
 
-    // Add more rows here...
-  ];
+        // Add more rows here...
+      ];
 
   @override
   Widget build(BuildContext context) {

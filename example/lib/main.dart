@@ -26,7 +26,10 @@ class MyApp extends StatelessWidget {
                 WavyBordersDemoWidget(),
                 ZigZagBordersDemoWidget(),
                 BumpBordersDemoWidget(),
-                const Text('Demo UseCases',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22),),
+                const Text(
+                  'Demo UseCases',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+                ),
                 DemoUseCasesWidget(),
               ],
             ),
