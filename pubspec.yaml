@@ -1,6 +1,6 @@
 name: perforated_border
 description: 'Create beautiful perforated and punch-hole borders around widgets with full control over shape, radius, spacing, and edges'
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/vinit105/perforated_border
 issue_tracker: https://github.com/vinit105/perforated_border/issues
 

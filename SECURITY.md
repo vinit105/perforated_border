@@ -10,7 +10,7 @@ The following versions of `perforated_border` receive security updates and patch
 
 | Version | Supported          |
 |---------|--------------------|
-| 1.0.1   | :white_check_mark: |
+| 1.0.3   | :white_check_mark: |
 | < 0.0.1 | :x:                |
 
 > The example app (`example/`) is not published to pub.dev and does **not** receive separate security updates — it exists purely for demonstration and testing purposes.
