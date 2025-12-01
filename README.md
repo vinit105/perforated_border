@@ -88,6 +88,12 @@ flutter pub get
 
 
 ## Usage
+> [!TIP]
+ **Border Shape Notice**  
+Some shapes may distort if `dentRadius`, `stripeCount`, or `flatWidth` use extreme values.  
+If the border looks off, adjust the values slightly (trial & error works best).  
+This behavior will be improve in future updates.
+
 Import the package 
 ```dart
 import 'package:perforated_border/perforated_border.dart';
